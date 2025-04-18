@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #000000, #3E2C23); /* Preto + Marrom */
+    background: linear-gradient(135deg, #3d210b, #000000); 
     padding: 20px;
     overflow: hidden;
     position: relative;
@@ -100,7 +100,7 @@ p {
 
 .particles-blackmirror span {
     position: absolute;
-    color: rgba(255, 255, 255, 0.08);
+    color: #8B5E3C;
     font-size: 18px;
     animation: glitchFloat 12s linear infinite;
     user-select: none;
