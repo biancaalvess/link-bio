@@ -1,5 +1,6 @@
 const container = document.querySelector('.particles-blackmirror');
-const chars = "01⌘Δ≡░▒▓█╬§@#&%$!?";
+const chars = ["HTML", "CSS", "JS", "React", "Node", "API","DOM", "Git", "JSON", "SASS", "Next", "Python","Tailwind"];
+
 
 for (let i = 0; i < 100; i++) {
     const symbol = document.createElement('span');

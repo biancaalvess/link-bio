@@ -100,11 +100,12 @@ p {
 
 .particles-blackmirror span {
     position: absolute;
-    color: #8B5E3C;
+    color: #8b5e3c68;
     font-size: 18px;
     animation: glitchFloat 12s linear infinite;
     user-select: none;
     white-space: nowrap;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 @keyframes glitchFloat {
@@ -126,9 +127,9 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(255,255,255,0.05);
+    background: #8b5e3c75;
     border: 1px solid rgba(255,255,255,0.2);
-    color: #fff;
+    color: #8B5E3C;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -139,5 +140,5 @@ p {
     transition: all 0.3s ease;
 }
 #sound-toggle:hover {
-    background: rgba(255,255,255,0.1);
+    background: #8b5e3c;;
 }
