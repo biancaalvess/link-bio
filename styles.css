@@ -10,19 +10,38 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #3d210b, #000000); 
+
+    background-color: #000;
+    background-image: url('https://i.pinimg.com/736x/3c/0e/f2/3c0ef27e03ce3009691ef1d3b2b72e14.jpg'); /* usa o nome do seu arquivo aqui */
+    background-repeat: repeat;
+    background-size: auto;
+
     padding: 20px;
     overflow: hidden;
     position: relative;
     color: #fff;
 }
 
+/* Camada escura sobre a imagem de fundo */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* opacidade leve pra não esconder a imagem */
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.7); /* sombra interna pra dar profundidade */
+    z-index: 0;
+}
+
+
 /* Container com efeito vidro */
 .container {
     max-width: 420px;
     text-align: center;
     padding: 40px;
-    background: rgba(20, 20, 20, 0.6); /* fundo semi-transparente */
+    background: rgba(20, 20, 20, 0.6);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.05),
                 0 0 40px rgba(255, 255, 255, 0.03),
@@ -123,22 +142,4 @@ p {
     }
 }
 
-#sound-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #8b5e3c75;
-    border: 1px solid rgba(255,255,255,0.2);
-    color: #8B5E3C;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    cursor: pointer;
-    z-index: 10;
-    backdrop-filter: blur(5px);
-    transition: all 0.3s ease;
-}
-#sound-toggle:hover {
-    background: #8b5e3c;;
-}
+
